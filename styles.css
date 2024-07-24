@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
@@ -50,12 +51,31 @@ body {
 }
 
 .message {
-    position: absolute;
-    top: 60%;
+    margin-top: 20px;
     text-align: center;
 }
 
 .message h1 {
     font-size: 2em;
     color: #333;
+}
+
+.message button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message button:hover {
+    background-color: darkred;
+}
+
+.message p {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
 }
